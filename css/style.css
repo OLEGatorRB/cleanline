@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main-navigation {
+  font-size: 14px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.main-menu-list {
+  list-style: none
+}
+
+.main-menu-list a {
+  color: #000;
+}
+
+.main-menu-list a:hover,
+.main-menu-list a:focus {
+  color: #dcbf94
+}
+
+.main-description {
+  font-size: 20px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.main-description-list {
+  list-style: none;
+}
+
+.services {
+  text-align: center;
+
+  color: #000;
+
+  background-color: #fff;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services-list p {
+  text-transform: none;
+}
+
+.services-list .button {
+  font-size: 12px;
+
+  color: #fff;
+
+  background-color: #2d251f
+}
+
+.types-of-cleaning {
+  color: #fff;
+
+  background-color: #2d333f
+}
+
+.types-of-cleaning-list,
+.description-cleanig-list
+ {
+  list-style: none;
+}
+
+.description-cleanig-item {
+  text-transform: none ;
+}
+
+.description-complex-cleanig-list,
+.description-general-cleanig-list,
+.description-after-repairs-cleanig-list {
+  display: none;
+}
+
+.price {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.price-list,
+.price-item,
+.price-item-type-list,
+.price-item-type-list-item-list {
+  list-style: none;
+}
+
+.price-item li {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.price-item .complex,
+.price-item .general,
+.price-item .after-repairs{
+  display: none;
+}
+
+.price-item-type-list li {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.price-item-type-list-item-list li {
+  text-transform: none;
+}
+
+.advantages {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item h4 {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.advantages p {
+  font-size: 16px;
+  line-height: 28px;
+
+  text-transform: none;
+}
+
+.faq {
+  color: #000;
+
+  background-color: #fff
+}
+
+.faq-list {
+  list-style: none;
+
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.modal-sevices-livingroom,
+.modal-sevices-cottage,
+.modal-sevices-office {
+  display: none
+}
+
+.main-footer {
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+
+  background-color: #2d251f;
+}
+
+.main-footer a {
+  color: #fff
+}
+
+.main-footer p {
+  font-size: 14px;
+  line-height: 16px
+}
+
+.main-footer-list {
+  list-style: none;
+}

@@ -206,7 +206,6 @@ h2 {
   background-color: #2d333f
 }
 
-
 .types-of-cleaning h2{
   margin-bottom: 50px;
 }
@@ -219,25 +218,35 @@ h2 {
   margin-bottom: 25px;
   padding: 0;
 
+  font-weight: bold;
+
   list-style: none;
+}
+
+.types-of-cleaning-item {
+  cursor: pointer;
+}
+
+.current {
+  color: #b1b4a9;
 }
 
 .description-types-of-cleaning {
   display: flex;
   justify-content: center;
+}
 
-  margin: 0;
-  padding: 0;
+.block {
+  
+  width: 350px;
 
   list-style: none;
-}
+
+  text-transform: none;
+} 
 
 .description-cleanig-item {
   position: relative;
-
-  padding-left: 30px;
-
-  text-transform: none ;
 }
 
 .description-cleanig-item::before {
@@ -245,29 +254,22 @@ h2 {
 
   position: absolute;
   top: 3px;
-  left: 0;
+  left: -25px;
 
   display: block;
 
   width: 17px;
   height: 17px;
+
   background-image: url(../img/svg/checkmark.svg);
 }
 
-
-
-.description-types-of-cleaning .block{
-    width: 450px;
+ .not-show {
+  display: none;
 }
 
-.description-types-of-cleaning ul {
-  list-style: none;
-}
-
-.description-types-of-cleaning {
-  display: flex;
-
-  list-style: none;
+.show {
+  display: block;
 }
 
 
@@ -291,10 +293,6 @@ h2 {
   padding: 0;
 }
 
-.price-container img{
-  display: block;
-}
-
 .price-list {
   display: flex;
   flex-direction: column;
@@ -302,25 +300,22 @@ h2 {
 
   margin: 0;
   padding: 0;
-}
 
-.price-list li {
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.price-list,
-.object-of-the-cleaning,
-.cleaning-area {
   list-style: none;
 }
 
 .type-of-cleaning {
   position: relative;
 
+  font-size: 24px;
+  line-height: 28px;
+
   padding-left: 40px;
   margin-bottom: 20px;
+
+  cursor: pointer;
 }
+
 .type-of-cleaning::before{
   content: "";
 
@@ -341,7 +336,10 @@ h2 {
 }
 
 .object-of-the-cleaning {
-  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .object-of-the-cleaning-item {
@@ -350,6 +348,9 @@ h2 {
 
   margin-top: 20px;
   margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .cleaning-area {
@@ -357,17 +358,16 @@ h2 {
   margin-left: 25px;
   padding: 0;
 
-}
-/*.supportive {display: block}*/
-
-.object-of-the-cleaning li {
-  font-size: 17px;
-  line-height: 28px;
-}
-
-.cleaning-area {
   text-transform: none;
+
+  list-style: none;
 }
+
+.price-container img{
+  display: block;
+  align-self: start;
+}
+
 
 
 .advantages {
@@ -486,8 +486,8 @@ h2 {
 .faq-list {
 
   width: 680px;
-
-  padding: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
 
   list-style: none;
 
@@ -501,15 +501,16 @@ h2 {
 }
 
 .faq-item {
-  margin-bottom: 15px;
+  margin: 0;
+  padding: 0;
 
   position: relative;
-
+  padding: 0;
   padding-left: 50px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
 
   cursor: pointer;
+
 }
 
 .faq-item::before {
@@ -527,12 +528,19 @@ h2 {
   background-image: url(../img/svg/arrows_circle_down.svg);
 }
 
-.modal-sevices-livingroom,
-.modal-sevices-cottage,
-.modal-sevices-office
- {
-  display: none
+.faq-item-description {
+  padding: 0;
+  padding-left: 75px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  line-height: 28px;
+
+  text-transform: none;
 }
+
+
 
 .main-footer {
   font-size: 14px;
@@ -610,12 +618,14 @@ h2 {
   line-height: 20px;
 
   margin: 0 auto;
-text-align: center;
+  text-align: center;
 }
 
 .modal {
   position: absolute;
   top: 170px;
+
+  display: none;
 
   color: #000;
 
@@ -623,8 +633,11 @@ text-align: center;
 
   border: 1px solid #b1b4a9;
 
-  box-shadow: 2px 2px 2px 2px #b1b4a9
 
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-services-list {
@@ -632,7 +645,7 @@ text-align: center;
   justify-content: space-around;
 
   margin: 0;
-  padding: 65px 0;
+  padding: 75px 0;
 
   list-style: none;
 }
@@ -644,38 +657,45 @@ text-align: center;
 }
 
 
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: -50px;
+  
+  width: 40px;
+  height: 40px;
 
-.modal::before {
+  font-size: 0;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  border-width: 0;
+
+}
+
+.modal-close::before,
+.modal-close::after {
   content: "";
 
   position: absolute;
-  top: 0;
-  right: -50px;
-
-  display: block;
+  top: 15px;
+  left: -1px ;
 
   width: 40px;
   height: 3px;
 
-  background-color: #b1b4a9;
+  background-color: #d0d0d0;
 
+}
+
+.modal-close::before {
   transform: rotate(45deg);
 }
 
-.modal::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: -50px;
-
-  display: block;
-
-  width: 40px;
-  height: 3px;
-
-  background-color: #b1b4a9;
-
+.modal-close::after {
   transform: rotate(-45deg);
-
 }
+
+s

@@ -66,23 +66,23 @@
             <h3>уборка квартир</h3>
             <img src="img/services_livingroom.jpg" height="271" alt="описание раздела уборка квартир">
             <p>от 1500 р.</p>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button cleaning-livingroom" type="button">Подробнее</button>
           </li>
           <li class="services-item">
             <h3>уборка домов</h3>
             <img src="img/services_cottage.jpg" height="271" alt="описание раздела уборка квартир">
             <p>от 2500</p>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button cleaning-cottage" type="button">Подробнее</button>
           </li>
           <li class="services-item">
             <h3>уборка офисов</h3>
             <img src="img/services_office.jpg" height="271" alt="описание раздела уборка квартир">
             <p>от 3500</p>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button cleaning-office" type="button">Подробнее</button>
           </li>
         </ul>
 
-        <section class="modal modal-sevices-livingroom container">
+        <section class="modal modal-services-livingroom container">
           <ul class="modal-services-list">
             <li class="modal-services-item">
               <img src="img/services_livingroom_popup.jpg" width="412" alt="фотография комнат"ы>
@@ -91,9 +91,10 @@
               lkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sf
             </li>
           </ul>
+          <button class="modal-close modal-close-livingroom" type = "button">Закрыть</button>
         </section>
 
-        <section class="modal modal-sevices-cottage container">
+        <section class="modal modal-services-cottage container">
           <ul class="modal-services-list">
             <li class="modal-services-item">
               <img src="img/services_cottage_popup.jpg" width="412" alt="фотография комнат"ы>
@@ -102,9 +103,10 @@
               lkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sf
             </li>
           </ul>
+          <button class="modal-close modal-close-cottage" type = "button">Закрыть</button>
         </section>
 
-        <section class="modal modal-sevices-office container">
+        <section class="modal modal-services-office container">
           <ul class="modal-services-list">
             <li class="modal-services-item">
               <img src="img/services_office_popup.jpg" width="412" alt="фотография комнат">
@@ -113,6 +115,8 @@
               lkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sflkj sfdsdsdf sdfds df dfssdfsafadf sdfdsf sddfkjslf sf
             </li>
           </ul>
+          <button class="modal-close modal-close-office" type = "button">Закрыть</button>
+
         </section>
       </section>
 
@@ -120,59 +124,135 @@
         <div class="container">
           <h2>Виды уборок</h2>
           <ul class="types-of-cleaning-list">
-            <li class="types-of-cleaning-item">
+            <li class="types-of-cleaning-item types-of-cleaning-item-supportive current">
               поддерживающая
             </li>
-            <li class="types-of-cleaning-item">
+            <li class="types-of-cleaning-item types-of-cleaning-item-complex">
               комплексная
             </li>
-            <li class="types-of-cleaning-item">
+            <li class="types-of-cleaning-item types-of-cleaning-item-general">
               генеральная
             </li>
-            <li class="types-of-cleaning-item">
+            <li class="types-of-cleaning-item types-of-cleaning-item-after-repairs">
               после ремонта
             </li>
           </ul>
+            <div class="supportive not-show show">
+              <div class="description-types-of-cleaning">
+                <ul class="block block-left">
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                </ul>
+                <ul class="block block-right">
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
 
-          <ul class="description-types-of-cleaning">
-            <li class="block block-left">
-              <ul>
-                <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
-                <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>
-                <li class="description-cleanig-item">Моем пол</li>
-                <li class="description-cleanig-item">Протираем плиттуса</li>
-                <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
-                <li class="description-cleanig-item">Протираем снаружи мебель</li>
-                <li class="description-cleanig-item">Моем пол</li>
-                <li class="description-cleanig-item">Протираем плиттуса</li>
-                <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
-                <li class="description-cleanig-item">Протираем снаружи мебель</li>
-              </ul>
-            <li class="block block-right">
-              <ul>
-                <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
-                <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>
-                <li class="description-cleanig-item">Моем пол</li>
-                <li class="description-cleanig-item">Протираем плиттуса</li>
-                <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
-                <li class="description-cleanig-item">Протираем снаружи мебель</li>
-                <li class="description-cleanig-item">Моем пол</li>
-                <li class="description-cleanig-item">Протираем плиттуса</li>
-                <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
-                <li class="description-cleanig-item">Протираем снаружи мебель</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+                </ul>
+              </div>
+            </div>          
+            <div class="complex not-show ">
+              <div class="description-types-of-cleaning">
+                <ul class="block block-left">
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+
+                </ul>
+                <ul class="block block-right">
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                </ul>
+              </div>
+            </div>
+            <div class="general not-show">
+              <div class="description-types-of-cleaning">
+                <ul class="block block-left">
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                
+                </ul>
+                <ul class="block block-right">
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                </ul>
+              </div>
+            </div>
+            <div class="after-repairs not-show">
+              <div class="description-types-of-cleaning">
+                <ul class="block block-left">
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+
+                </ul>
+                <ul class="block block-right">
+                  <li class="description-cleanig-item">Протираем пыль с поверхностей</li>
+                  <li class="description-cleanig-item">Пылесосим ковровые поверхности</li>                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                  <li class="description-cleanig-item">Моем пол</li>
+                  <li class="description-cleanig-item">Протираем плиттуса</li>
+                  <li class="description-cleanig-item">Моем зеркала и стеклянные поверхности</li>
+                  <li class="description-cleanig-item">Протираем снаружи мебель</li>
+                </ul>
+              </div>
+            </div>
       </section>
 
       <section class="price container" id="price">
         <h2>Наши цены</h2>
         <ul class="price-container">
           <ul class="price-list">
-            <li class="type-of-cleaning">
+            <li class="type-of-cleaning supportive-price">
               поддерживающая уборка
-              <ul class="object-of-the-cleaning supportive">
+              <ul class="object-of-the-cleaning supportive-list not-show">
                 <li class="object-of-the-cleaning-item">
                   уборка квартиры
                   <ul class="cleaning-area">
@@ -217,9 +297,9 @@
                 </li>
               </ul>
             </li>
-            <li class="type-of-cleaning">
+            <li class="type-of-cleaning complex-price">
               комплексная уборка
-              <ul class="object-of-the-cleaning complex">
+              <ul class="object-of-the-cleaning complex-list not-show">
                 <li class="object-of-the-cleaning-item">
                   уборка квартиры
                   <ul class="cleaning-area">
@@ -234,7 +314,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка дома
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -248,7 +328,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка офиса
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -264,9 +344,9 @@
                 </li>
               </ul>
             </li>
-            <li class="type-of-cleaning">
+            <li class="type-of-cleaning general-price">
               генеральная уборка
-              <ul class="object-of-the-cleaning general">
+              <ul class="object-of-the-cleaning general-list not-show">
                 <li class="object-of-the-cleaning-item">
                   уборка квартиры
                   <ul class="cleaning-area">
@@ -281,7 +361,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка дома
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -295,7 +375,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка офиса
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -311,9 +391,9 @@
                 </li>
               </ul>
             </li>
-            <li class="type-of-cleaning">
+            <li class="type-of-cleaning  after-repairs-price">
               уборка после ремонта
-              <ul class="object-of-the-cleaning after-repairs">
+              <ul class="object-of-the-cleaning  after-repairs-list not-show">
                 <li class="object-of-the-cleaning-item">
                   уборка квартиры
                   <ul class="cleaning-area">
@@ -328,7 +408,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка дома
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -342,7 +422,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="object_of_the_cleaning-item">
+                <li class="object-of-the-cleaning-item">
                   уборка офиса
                   <ul class="cleaning-area">
                     <li class="cleaning-area-item">
@@ -411,17 +491,26 @@
 
       <section class="faq" id="faq">
         <h2>Часто задаваемые вопросы</h2>
-        <ul class="faq-list container">
-          <li class="faq-item">Сколько клинеров приезжает на уборку?</li>
-          <li class="faq-item">можно ли провести уборку в моё отсутствие</li>
-          <li class="faq-item">будет ли у меня скидка при заказе ругулярной уборки ?</li>
-          <li class="faq-item">какие у вас способы оплаты?</li>
-          <li class="faq-item">двигаете ли вы мебель во время уборки?</li>
-          <li class="faq-item">нужно ли оставлять клинеру какой-либо инвентарь?</li>
-          <li class="faq-item">выезжаете ли вы за мкад?</li>
-          <li class="faq-item">выносите ли вы крупногабаритный строительный мусор?</li>
-          <li class="faq-item">после уборки есть недостатки. что делать?</li>
-        </ul>
+        <dl class="faq-list container">
+          <dt class="faq-item faq-item-1">Сколько клинеров приезжает на уборку?</dt>
+          <dd class="faq-item-description faq-item-description-1 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-2">можно ли провести уборку в моё отсутствие</dt>
+          <dd class="faq-item-description faq-item-description-2 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-3">будет ли у меня скидка при заказе ругулярной уборки ?</dt>
+          <dd class="faq-item-description faq-item-description-3 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-4">какие у вас способы оплаты?</dt>
+          <dd class="faq-item-description faq-item-description-4 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-5">двигаете ли вы мебель во время уборки?</dt>
+          <dd class="faq-item-description faq-item-description-5 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-6">нужно ли оставлять клинеру какой-либо инвентарь?</dt>
+          <dd class="faq-item-description faq-item-description-6 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-7">выезжаете ли вы за мкад?</dt>
+          <dd class="faq-item-description faq-item-description-7 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-8">выносите ли вы крупногабаритный строительный мусор?</dt>
+          <dd class="faq-item-description faq-item-description-8 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+          <dt class="faq-item faq-item-9">после уборки есть недостатки. что делать?</dt>
+          <dd class="faq-item-description faq-item-description-9 not-show">двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во двигаете ли вы мебель во </dd>
+        </dl>
       </section>
 
 
@@ -443,5 +532,255 @@
       </nav>
       <p class="copyright">&#169; 2020 cleanline<span>.ru</span></p>
     </footer>
+
+    <script>
+      var livingroombuttom = document.querySelector(".cleaning-livingroom");
+      var cottagebutton = document.querySelector(".cleaning-cottage");
+      var officebuttom = document.querySelector(".cleaning-office");
+
+      var popuplivingroom = document.querySelector(".modal-services-livingroom");
+      var popupcottage = document.querySelector(".modal-services-cottage");
+      var popupoffice = document.querySelector(".modal-services-office");
+
+      var closepopuplivingroom = document.querySelector(".modal-close-livingroom");
+      var closepopupcottage = document.querySelector(".modal-close-cottage");
+      var closepopupoffice = document.querySelector(".modal-services-office");
+
+      livingroombuttom.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popuplivingroom.classList.add('modal-show');
+      })
+
+      cottagebutton.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popupcottage.classList.add("modal-show");
+      })
+
+      officebuttom.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popupoffice.classList.add("modal-show");
+      })
+
+      closepopuplivingroom.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popuplivingroom.classList.remove("modal-show");
+      })
+
+      closepopupcottage.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popupcottage.classList.remove("modal-show");
+      })
+
+      closepopupoffice.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popupoffice.classList.remove("modal-show");
+      })
+
+      window.addEventListener("keydown", function(evt){
+        if(evt.keyCode === 27){
+          evt.preventDefault();
+          if(popuplivingroom.classList.contains("modal-show") || popupcottage.classList.contains("modal-show") || popupoffice.classList.contains("modal-show")){
+            popuplivingroom.classList.remove("modal-show");
+            popupcottage.classList.remove("modal-show");
+            popupoffice.classList.remove("modal-show");
+          }
+        }
+      })
+
+      var supportive_cleaning = document.querySelector(".types-of-cleaning-item-supportive");
+      var complex_cleaning = document.querySelector(".types-of-cleaning-item-complex");
+      var general_cleaning = document.querySelector(".types-of-cleaning-item-general");
+      var after_repair_cleaning = document.querySelector(".types-of-cleaning-item-after-repairs");
+
+      var supportive = document.querySelector(".supportive");
+      var complex = document.querySelector(".complex");
+      var general = document.querySelector(".general");
+      var after_repair = document.querySelector(".after-repairs")
+
+      complex_cleaning.addEventListener("click", function(evt){
+        evt.preventDefault();
+        if(supportive_cleaning.classList.contains("current") || complex_cleaning.classList.contains("current") || general_cleaning.classList.contains("current") || after_repair_cleaning.classList.contains("current")){
+          supportive_cleaning.classList.remove("current");
+          general_cleaning.classList.remove("current");
+          after_repair_cleaning.classList.remove("current");
+
+          if(supportive.classList.contains("show")){
+            supportive.classList.remove("show");
+          }
+          if(general.classList.contains("show")){
+            general.classList.remove("show");
+          }
+          if(after_repair.classList.contains("show")){
+            after_repair.classList.remove("show");
+          }
+
+          complex_cleaning.classList.add("current");
+          complex.classList.add("show");
+        }
+      })
+      
+      general_cleaning.addEventListener("click", function(evt){
+        evt.preventDefault();
+        if(supportive_cleaning.classList.contains("current") || complex_cleaning.classList.contains("current") || general_cleaning.classList.contains("current") || after_repair_cleaning.classList.contains("current")){
+          supportive_cleaning.classList.remove("current");
+          complex_cleaning.classList.remove("current");
+          after_repair_cleaning.classList.remove("current");
+
+          if(supportive.classList.contains("show")){
+            supportive.classList.remove("show");
+          }
+          if(complex.classList.contains("show")){
+            complex.classList.remove("show");
+          }
+          if(after_repair.classList.contains("show")){
+            after_repair.classList.remove("show");
+          }
+
+          general_cleaning.classList.add("current");
+          general.classList.add("show");
+        }
+      })
+      
+      after_repair_cleaning.addEventListener("click", function(evt){
+        evt.preventDefault();
+        if(supportive_cleaning.classList.contains("current") || complex_cleaning.classList.contains("current") || general_cleaning.classList.contains("current") || after_repair_cleaning.classList.contains("current")){
+          supportive_cleaning.classList.remove("current");
+          complex_cleaning.classList.remove("current");
+          general_cleaning.classList.remove("current");
+
+          if(supportive.classList.contains("show")){
+            supportive.classList.remove("show");
+          }
+          if(complex.classList.contains("show")){
+            complex.classList.remove("show");
+          }
+          if(general.classList.contains("show")){
+            general.classList.remove("show");
+          }
+
+          after_repair_cleaning.classList.add("current");
+          after_repair.classList.add("show");
+        }
+      })
+
+      supportive_cleaning.addEventListener("click", function(evt){
+        evt.preventDefault();
+        if(supportive_cleaning.classList.contains("current") || complex_cleaning.classList.contains("current") || general_cleaning.classList.contains("current") || after_repair_cleaning.classList.contains("current")){
+          general_cleaning.classList.remove("current");
+          complex_cleaning.classList.remove("current");
+          after_repair_cleaning.classList.remove("current");
+
+          if(after_repair.classList.contains("show")){
+            after_repair.classList.remove("show");
+          }
+          if(complex.classList.contains("show")){
+            complex.classList.remove("show");
+          }
+          if(general.classList.contains("show")){
+            general.classList.remove("show");
+          }
+
+          supportive_cleaning.classList.add("current");
+          supportive.classList.add("show");
+        }
+      })     
+    
+      var supportive_price = document.querySelector(".supportive-price");
+      var supportive_list = document.querySelector(".supportive-list")
+      var complex_price = document.querySelector(".complex-price");
+      var complex_list = document.querySelector(".complex-list")
+      var general_price = document.querySelector(".general-price");
+      var general_list = document.querySelector(".general-list")
+      var after_repairs_price = document.querySelector(".after-repairs-price");
+      var after_repairs_list = document.querySelector(".after-repairs-list")
+
+      supportive_price.addEventListener("click", function(evt){
+        evt.preventDefault();
+        supportive_list.classList.toggle("show");
+      })
+
+      complex_price.addEventListener("click", function(evt){
+        evt.preventDefault();
+        complex_list.classList.toggle("show");
+      })
+
+      general_price.addEventListener("click", function(evt){
+        evt.preventDefault();
+        general_list.classList.toggle("show");
+      })
+      
+      after_repairs_price.addEventListener("click", function(evt){
+        evt.preventDefault();
+        after_repairs_list.classList.toggle("show");
+      })
+    
+    var faq_item_1 = document.querySelector(".faq-item-1")
+    var faq_item_description_1 = document.querySelector(".faq-item-description-1")
+    var faq_item_2 = document.querySelector(".faq-item-2")
+    var faq_item_description_2 = document.querySelector(".faq-item-description-2")
+    var faq_item_3 = document.querySelector(".faq-item-3")
+    var faq_item_description_3 = document.querySelector(".faq-item-description-3")
+    var faq_item_4 = document.querySelector(".faq-item-4")
+    var faq_item_description_4 = document.querySelector(".faq-item-description-4")
+    var faq_item_5 = document.querySelector(".faq-item-5")
+    var faq_item_description_5 = document.querySelector(".faq-item-description-5")
+    var faq_item_5 = document.querySelector(".faq-item-5")
+    var faq_item_description_5 = document.querySelector(".faq-item-description-5")
+    var faq_item_6 = document.querySelector(".faq-item-6")
+    var faq_item_description_6 = document.querySelector(".faq-item-description-6")
+    var faq_item_7 = document.querySelector(".faq-item-7")
+    var faq_item_description_7 = document.querySelector(".faq-item-description-7")
+    var faq_item_8 = document.querySelector(".faq-item-8")
+    var faq_item_description_8 = document.querySelector(".faq-item-description-8")
+    var faq_item_9 = document.querySelector(".faq-item-9")
+    var faq_item_description_9 = document.querySelector(".faq-item-description-9")
+
+    faq_item_1.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_1.classList.toggle('show')
+    })
+
+    faq_item_2.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_2.classList.toggle('show')
+    })
+
+    faq_item_3.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_3.classList.toggle('show')
+    })
+
+    faq_item_4.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_4.classList.toggle('show')
+    })
+
+    faq_item_5.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_5.classList.toggle('show')
+    })
+
+    faq_item_6.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_6.classList.toggle('show')
+    })
+    
+    faq_item_7.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_7.classList.toggle('show')
+    })
+
+    faq_item_8.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_8.classList.toggle('show')
+    })
+
+    faq_item_9.addEventListener("click", function(evt){
+      evt.preventDefault();
+      faq_item_description_9.classList.toggle('show')
+    })
+
+
+    </script>
   </body>
 </html>
